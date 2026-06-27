@@ -13,10 +13,10 @@ def predict_loan(application: LoanApplication):
     
     
     if application.income> 60000 and application.employment_experience> 3:
-        decision = "approve ho gya loan ok koi tension nahi lena ka ab "
+        decision = "approve loan "
         
     else:
-        decision = "rejected application because you are not eligible for loan ok"
+        decision = "rejected loan"
         
     return {
         "application age":application.age,
